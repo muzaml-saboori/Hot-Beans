@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hot Beans Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">🔥</span>
+        <span class="logo-text">Hot Beans</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-page="team">Team</a></li>
+        <li><a href="#" class="nav-link" data-page="jobs">Job Roles</a></li>
+        <li><a href="#" class="nav-link" data-page="courses">Coding Courses</a></li>
+        <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <section class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">We Build <span class="highlight">Digital</span> Futures</h1>
+          <p class="hero-subtitle">Hot Beans is a passionate web development company crafting beautiful, fast and functional websites for clients around the world.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="showPage('jobs')">View Job Roles</button>
+            <button class="btn btn-outline" onclick="showPage('about')">Learn More</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="code-lines">
+              <div class="code-line"><span class="c-pink">function</span> <span class="c-yellow">buildFuture</span><span class="c-white">()</span> <span class="c-white">{</span></div>
+              <div class="code-line pad"><span class="c-blue">const</span> <span class="c-white">team</span> <span class="c-pink">=</span> <span class="c-green">"Hot Beans"</span><span class="c-white">;</span></div>
+              <div class="code-line pad"><span class="c-blue">return</span> <span class="c-white">team</span><span class="c-pink">.</span><span class="c-yellow">createMagic</span><span class="c-white">();</span></div>
+              <div class="code-line"><span class="c-white">}</span></div>
+              <div class="code-line">&nbsp;</div>
+              <div class="code-line"><span class="c-yellow">buildFuture</span><span class="c-white">();</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">120+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">35+</div>
+          <div class="stat-label">Team Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <h2>What We Do</h2>
+          <p>Our core services tailored for the modern web</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Clean, fast, and responsive websites built with the latest technologies and best practices.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Beautiful user interfaces that are intuitive, accessible, and delightful to use.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Mobile First</h3>
+            <p>Every project we build is designed to work flawlessly on all devices and screen sizes.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🚀</div>
+            <h3>Performance</h3>
+            <p>Lightning fast load times and optimised code that keeps your users engaged.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🔒</div>
+            <h3>Security</h3>
+            <p>We follow the highest security standards to keep your data and users safe at all times.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Analytics</h3>
+            <p>Data-driven insights to help you understand your users and grow your business.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-section">
+        <div class="why-text">
+          <h2>Why Choose <span class="highlight">Hot Beans?</span></h2>
+          <p>We are not just a web agency. We are your digital partner. From idea to launch, we work alongside you every step of the way with transparency, passion, and skill.</p>
+          <ul class="why-list">
+            <li><span class="check">✔</span> Dedicated team for every project</li>
+            <li><span class="check">✔</span> On time and within budget delivery</li>
+            <li><span class="check">✔</span> Post-launch support and maintenance</li>
+            <li><span class="check">✔</span> Modern tech stack and best practices</li>
+          </ul>
+          <button class="btn btn-primary" onclick="showPage('team')">Meet Our Team</button>
+        </div>
+        <div class="why-image">
+          <div class="image-placeholder">
+            <div class="big-icon">🔥</div>
+            <p>Passionate. Creative. Expert.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="page-team">
+      <div class="page-hero">
+        <h1>Meet the <span class="highlight">Team</span></h1>
+        <p>The talented people behind Hot Beans who make the magic happen every single day.</p>
+      </div>
+      <div class="section">
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #f97316, #ea580c);">JD</div>
+            <h3>Christofer Surtherland </h3>
+            <p class="team-role">Founder & Lead Developer</p>
+            <p class="team-bio">Christoper founded Hot Beans with a vision to make powerful web development accessible to all businesses. 10+ years in full-stack development.</p>
+            <div class="team-skills">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">React</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">SC</div>
+            <h3>Tamim Noorzadi</h3>
+            <p class="team-role">Head of UI/UX Design</p>
+            <p class="team-bio">Tamim leads our design team with an eye for detail and a passion for creating beautiful, user-centered digital experiences.</p>
+            <div class="team-skills">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">User Research</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #10b981, #059669);">MR</div>
+            <h3>Mono Yaho </h3>
+            <p class="team-role">Backend Engineer</p>
+            <p class="team-bio">Mono is our backend wizard, specialising in scalable APIs, databases, and cloud infrastructure that power our client applications.</p>
+            <div class="team-skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar" style="background: linear-gradient(135deg, #ef4444, #dc2626);">LP</div>
+            <h3>Samual Yahod</h3>
+            <p class="team-role">Frontend Developer</p>
+            <p class="team-bio">Samual transforms designs into pixel-perfect, interactive web experiences with a focus on accessibility and performance.</p>
+            <div class="team-skills">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="page-jobs">
+      <div class="page-hero">
+        <h1>Open <span class="highlight">Job Roles</span></h1>
+        <p>Join the Hot Beans family. We are always looking for passionate, talented individuals to grow with us.</p>
+      </div>
+      <div class="section">
+        <div class="jobs-grid">
+          <div class="job-card">
+            <div class="job-header">
+              <div class="job-icon">💻</div>
+              <div>
+                <h3>Junior Frontend Developer</h3>
+                <p class="job-meta">Full Time &nbsp;|&nbsp; Remote / Hybrid &nbsp;|&nbsp; £24,000 - £30,000</p>
+              </div>
+            </div>
+            <p class="job-desc">We are looking for a passionate junior developer with solid HTML, CSS, and JavaScript skills. You will work alongside senior devs to build responsive, accessible websites.</p>
+            <div class="job-requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Proficiency in HTML, CSS, JavaScript</li>
+                <li>Understanding of responsive design</li>
+                <li>Basic Git knowledge</li>
+                <li>Eagerness to learn and grow</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('Junior Frontend Developer')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <div class="job-icon">🎨</div>
+              <div>
+                <h3>UI/UX Designer</h3>
+                <p class="job-meta">Full Time &nbsp;|&nbsp; On Site &nbsp;|&nbsp; £30,000 - £40,000</p>
+              </div>
+            </div>
+            <p class="job-desc">We need a creative UI/UX designer who can translate complex ideas into clean, beautiful, user-friendly designs that delight our clients and their customers.</p>
+            <div class="job-requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Proficiency in Figma or Adobe XD</li>
+                <li>Strong portfolio of past work</li>
+                <li>Knowledge of design systems</li>
+                <li>User research experience</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('UI/UX Designer')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <div class="job-icon">⚙️</div>
+              <div>
+                <h3>Backend Developer</h3>
+                <p class="job-meta">Full Time &nbsp;|&nbsp; Remote &nbsp;|&nbsp; £35,000 - £50,000</p>
+              </div>
+            </div>
+            <p class="job-desc">Join our backend team to build powerful APIs, manage databases, and create the server-side logic that drives our client applications forward.</p>
+            <div class="job-requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Experience with Node.js or Python</li>
+                <li>SQL and NoSQL database knowledge</li>
+                <li>RESTful API design</li>
+                <li>Cloud platform experience (AWS/GCP)</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('Backend Developer')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <div class="job-icon">📱</div>
+              <div>
+                <h3>Mobile App Developer</h3>
+                <p class="job-meta">Full Time &nbsp;|&nbsp; Hybrid &nbsp;|&nbsp; £35,000 - £48,000</p>
+              </div>
+            </div>
+            <p class="job-desc">Help us build next-generation mobile apps for iOS and Android. You will work on exciting client projects that reach thousands of users every day.</p>
+            <div class="job-requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Experience with Flutter or React Native</li>
+                <li>iOS or Android native development</li>
+                <li>App Store submission experience</li>
+                <li>Strong problem solving skills</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('Mobile App Developer')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <div class="job-icon">🔒</div>
+              <div>
+                <h3>Cybersecurity Analyst</h3>
+                <p class="job-meta">Full Time &nbsp;|&nbsp; On Site &nbsp;|&nbsp; £40,000 - £55,000</p>
+              </div>
+            </div>
+            <p class="job-desc">Protect our clients' digital assets by identifying vulnerabilities, implementing security protocols, and ensuring compliance with industry standards.</p>
+            <div class="job-requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Security certifications (CEH, CISSP)</li>
+                <li>Penetration testing experience</li>
+                <li>Knowledge of GDPR compliance</li>
+                <li>Incident response skills</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('Cybersecurity Analyst')">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <div class="job-icon">📊</div>
+              <div>
+                <h3>Project Manager</h3>
+                <p class="job-meta">Full Time &nbsp;|&nbsp; Hybrid &nbsp;|&nbsp; £32,000 - £45,000</p>
+              </div>
+            </div>
+            <p class="job-desc">Lead client projects from kickoff to launch. You will manage timelines, budgets, and communication to ensure smooth delivery every time.</p>
+            <div class="job-requirements">
+              <h4>Requirements:</h4>
+              <ul>
+                <li>Project management certification</li>
+                <li>Agile and Scrum experience</li>
+                <li>Excellent communication skills</li>
+                <li>Tech industry background preferred</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary" onclick="openModal('Project Manager')">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="page-courses">
+      <div class="page-hero">
+        <h1>Coding <span class="highlight">Courses</span></h1>
+        <p>Level up your skills with our expert-led coding courses. From complete beginner to industry professional.</p>
+      </div>
+      <div class="section">
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-badge beginner">Beginner</div>
+            <div class="course-icon">🌐</div>
+            <h3>HTML & CSS Fundamentals</h3>
+            <p>Start your web development journey. Learn how to structure web pages and style them beautifully from scratch.</p>
+            <div class="course-details">
+              <div class="course-detail"><span>⏱</span> 6 Weeks</div>
+              <div class="course-detail"><span>📚</span> 24 Lessons</div>
+              <div class="course-detail"><span>🎯</span> Beginner</div>
+            </div>
+            <div class="course-topics">
+              <h4>What you will learn:</h4>
+              <ul>
+                <li>HTML structure and semantic elements</li>
+                <li>CSS styling, flexbox, and grid</li>
+                <li>Responsive design principles</li>
+                <li>Building your first website</li>
+              </ul>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">Free</div>
+              <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="btn btn-primary">Enrol Now</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-badge beginner">Beginner</div>
+            <div class="course-icon">⚡</div>
+            <h3>JavaScript for Beginners</h3>
+            <p>Learn the language of the web. Master JavaScript fundamentals and start building interactive, dynamic websites.</p>
+            <div class="course-details">
+              <div class="course-detail"><span>⏱</span> 8 Weeks</div>
+              <div class="course-detail"><span>📚</span> 32 Lessons</div>
+              <div class="course-detail"><span>🎯</span> Beginner</div>
+            </div>
+            <div class="course-topics">
+              <h4>What you will learn:</h4>
+              <ul>
+                <li>Variables, functions and loops</li>
+                <li>DOM manipulation</li>
+                <li>Event handling</li>
+                <li>Fetch API and JSON basics</li>
+              </ul>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">Free</div>
+              <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="btn btn-primary">Enrol Now</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-badge intermediate">Intermediate</div>
+            <div class="course-icon">🗄️</div>
+            <h3>SQL Programing and SQL Security</h3>
+            <p>Take your skills server-side. Build APIs, connect databases, and understand how the backend works in real applications.</p>
+            <div class="course-details">
+              <div class="course-detail"><span>⏱</span> 10 Weeks</div>
+              <div class="course-detail"><span>📚</span> 40 Lessons</div>
+              <div class="course-detail"><span>🎯</span> Intermediate</div>
+            </div>
+            <div class="course-topics">
+              <h4>What you will learn:</h4>
+              <ul>
+                <li>Node.js and Express fundamentals</li>
+                <li>REST API design and development</li>
+                <li>MongoDB and SQL databases</li>
+                <li>Authentication and security</li>
+              </ul>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">Free</div>
+              <a href="https://www.w3schools.com/sql/default.asp" target="_blank" class="btn btn-primary">Enrol Now</a>
+            </div>
+          </div>
+
+
+          <div class="course-card">
+            <div class="course-badge advanced">Advanced</div>
+            <div class="course-icon">☁️</div>
+            <h3> C++ Full Course </h3>
+            <p>Understand how modern applications are deployed, scaled, and maintained using cloud infrastructure and DevOps practices.</p>
+            <div class="course-details">
+              <div class="course-detail"><span>⏱</span> 12 Weeks</div>
+              <div class="course-detail"><span>📚</span> 48 Lessons</div>
+              <div class="course-detail"><span>🎯</span> Advanced</div>
+            </div>
+            <div class="course-topics">
+              <h4>What you will learn:</h4>
+              <ul>
+                <li>AWS core services</li>
+                <li>Docker and containerisation</li>
+                <li>CI/CD pipeline setup</li>
+                <li>Infrastructure as Code</li>
+              </ul>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">Free</div>
+              <a href="https://www.w3schools.com/cpp/default.asp" target="_blank" class="btn btn-primary">Enrol Now</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-badge advanced">Advanced</div>
+            <div class="course-icon">🔐</div>
+            <h3>Web Security & Ethical Hacking (GOOGLE)</h3>
+            <p>Learn to think like a hacker to defend like a pro. Understand common vulnerabilities and how to protect web applications.</p>
+            <div class="course-details">
+              <div class="course-detail"><span>⏱</span> 10 Weeks</div>
+              <div class="course-detail"><span>📚</span> 36 Lessons</div>
+              <div class="course-detail"><span>🎯</span> Advanced</div>
+            </div>
+            <div class="course-topics">
+              <h4>What you will learn:</h4>
+              <ul>
+                <li>OWASP Top 10 vulnerabilities</li>
+                <li>SQL injection and XSS prevention</li>
+                <li>Penetration testing basics</li>
+                <li>HTTPS and encryption</li>
+              </ul>
+            </div>
+            <div class="course-footer">
+              <div class="course-price">Free</div>
+              <a href="https://www.coursera.org/professional-certificates/google-cybersecurity?utm_medium=sem&utm_source=bg&utm_campaign=b2c_emea_google-cybersecurity_google_ftcof_professional-certificates_cx_dr_bau_bg_pmax_pr_gb_en_m_x_25-05_x&campaignid=663462188&adgroupid=1245748022730179&device=c&keyword=www.coursera.org&matchtype=b&network=o&devicemodel=&adposition=&creativeid=77859384236527&adgroup=b2c_emea_google-cybersecurity_google_cx_bau_bg_gb_aud-sgl_x_npl-sr-thm_x_hyb_x_x_professional-certificates_x&querystring=hack%20course&targetid=kwd-2329658981439330:loc-188&bidmatchtype=bb&extensionid=&msclkid=c3536b79a3d31516570102afdd6caca0" target="_blank" class="btn btn-primary">Enrol Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="page-about">
+      <div class="page-hero">
+        <h1>About <span class="highlight">Hot Beans</span></h1>
+        <p>Our story, our values, and what drives us to do our best work every single day.</p>
+      </div>
+
+      <div class="section">
+        <div class="about-story">
+          <div class="about-text">
+            <h2>Our Story</h2>
+            <p>Hot Beans was founded in 2025 by Christofer Surtherlannd in a small office in Haringey. What started as a one-person freelance operation has grown into a team of 35+ talented designers, developers, and strategists.</p>
+            <p>We started with one simple belief: great web development should be available to businesses of all sizes, not just the big players with massive budgets. That belief still drives everything we do today.</p>
+            <p>Over the years we have delivered over 120 projects for clients ranging from local small businesses to national brands, always with the same commitment to quality, honesty, and results.</p>
+          </div>
+          <div class="about-values-box">
+            <h3>Our Core Values</h3>
+            <div class="value-item">
+              <span class="value-icon">🔥</span>
+              <div>
+                <h4>Passion</h4>
+                <p>We love what we do, and it shows in every pixel and every line of code.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🤝</span>
+              <div>
+                <h4>Integrity</h4>
+                <p>We are honest, transparent, and always do right by our clients.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">💡</span>
+              <div>
+                <h4>Innovation</h4>
+                <p>We stay ahead of the curve and always bring fresh ideas to the table.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🌱</span>
+              <div>
+                <h4>Growth</h4>
+                <p>We invest in our team and our clients to grow together for the long term.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section skills-section">
+        <div class="section-header">
+          <h2>Our Expertise</h2>
+          <p>Technologies and skills we have mastered over the years</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>HTML & CSS</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>JavaScript</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>Node.js & Backend</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>UI/UX Design</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>Cloud & DevOps</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>Mobile Development</span><span>78%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section contact-section">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p>Have a project in mind? We would love to hear from you.</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <h4>Address</h4>
+                <p>Haringey Sixthform Collage, London</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <h4>Email</h4>
+                <p>hello@hotbeans.co.uk</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <h4>Phone</h4>
+                <p>0161 456 7890</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕒</span>
+              <div>
+                <h4>Hours</h4>
+                <p>Mon - Fri: 9am - 6pm</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="contactName" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="contactEmail" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" id="contactSubject" placeholder="Project enquiry..." required />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea id="contactMessage" rows="5" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-icon">🔥</span>
+          <span class="logo-text">Hot Beans</span>
+        </div>
+        <p>Building digital futures, one line of code at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('team')">Team</a></li>
+          <li><a href="#" onclick="showPage('jobs')">Job Roles</a></li>
+          <li><a href="#" onclick="showPage('courses')">Coding Courses</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li>ahmadmuzamilsaboori@hotbeans.co.uk</li>
+          <li>07897390609</li>
+          <li>London, UK</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Hot Beans Web. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
